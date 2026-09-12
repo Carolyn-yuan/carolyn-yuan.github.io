@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengyuan Zhang - Personal Homepage</title>
+    <style>
+        /* 全局样式 - 简约蓝色风 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: #334155;
+            background-color: #f8fafc;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        /* 容器布局 */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* 头部信息 */
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #e2e8f0;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            color: #1e3a8a;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        header .subtitle {
+            font-size: 1.2rem;
+            color: #64748b;
+            font-weight: 400;
+        }
+        header .contact-info {
+            margin-top: 16px;
+            font-size: 0.95rem;
+            color: #475569;
+        }
+        header .contact-info a {
+            margin: 0 10px;
+        }
+
+        /* 各板块标题 */
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 1.4rem;
+            color: #1e3a8a;
+            font-weight: 600;
+            margin-bottom: 16px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #bfdbfe;
+            display: inline-block;
+        }
+
+        /* 条目卡片 */
+        .item {
+            margin-bottom: 24px;
+            padding-left: 16px;
+            border-left: 3px solid #bfdbfe;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 4px;
+        }
+        .item-title {
+            font-weight: 600;
+            color: #0f172a;
+            font-size: 1.05rem;
+        }
+        .item-subtitle {
+            font-style: italic;
+            color: #475569;
+            font-size: 0.95rem;
+        }
+        .item-date {
+            font-size: 0.9rem;
+            color: #64748b;
+            white-space: nowrap;
+        }
+        .item-desc {
+            font-size: 0.95rem;
+            color: #475569;
+            margin-top: 6px;
+        }
+        .item-desc ul {
+            margin-top: 4px;
+            padding-left: 20px;
+        }
+        .item-desc li {
+            margin-bottom: 4px;
+        }
+
+        /* 技能标签 */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .skill-tag {
+            background-color: #dbeafe;
+            color: #1e40af;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .item-header {
+                flex-direction: column;
+            }
+            .item-date {
+                margin-top: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 头部 -->
+        <header>
+            <h1>Pengyuan Zhang</h1>
+            <div class="subtitle">M.Sc. in Analogue and Digital Integrated Circuit Design</div>
+            <div class="contact-info">
+                <span>Imperial College London</span> · 
+                <span>Xidian University</span>
+            </div>
+        </header>
+
+        <!-- 教育背景 -->
+        <section>
+            <h2>🎓 Education</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Imperial College London</div>
+                        <div class="item-subtitle">M.Sc. in Analogue and Digital Integrated Circuit Design</div>
+                    </div>
+                    <div class="item-date">09/2026 – 09/2027</div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Xidian University</div>
+                        <div class="item-subtitle">B.Eng. in Electronic Information Engineering (Sino-French Joint Programme)</div>
+                    </div>
+                    <div class="item-date">09/2022 – 06/2026</div>
+                </div>
+                <div class="item-desc">
+                    GPA: 3.8/4.0; 88.3/100 (Top 5%)<br>
+                    <strong>Key Courses (A+):</strong> Digital Image Processing, Signals and Systems, Digital Circuits and Logic Design, Microcomputer Principle & System Design, Physics of Semiconductor, Probability & Mathematical Statistics
+                </div>
+            </div>
+        </section>
+
+        <!-- 发表论文 -->
+        <section>
+            <h2>📄 Publications</h2>
+            <div class="item">
+                <div class="item-desc">
+                    <ul>
+                        <li><strong>[1]</strong> Zhang, P. (2024). Implementation of fast Fourier transform in music, signal processing and optics. <em>ICMAE 2024</em>. DOI: 10.1049/icp.2024.4547.</li>
+                        <li><strong>[2]</strong> Shi, Y., Zhang, P., et al. RTF-YOLO: An RGB-Thermal Fusion YOLO for All-Weather Object Detection in Autonomous Driving. <em>IEEE ICAEA 2026</em>. Accepted.</li>
+                        <li><strong>[3]</strong> Zhang, P. An ArmPi FPV-based Intelligent Music Performer. Submitted to <em>The 8th ICRCV 2026</em>.</li>
+                        <li><strong>[4]</strong> Zhang, P. Simulation-Based FPGA Implementation of a Backpropagation Neural Network with Adaptive Fixed-Point Precision Scaling. Submitted to <em>The 19th IEEE MCSoc-2026</em>.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 科研经历 -->
+        <section>
+            <h2>🔬 Research Experiences</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">An Autonomous Music Performer Based on ArmPi FPV Vision Robotic Arm</div>
+                        <div class="item-subtitle">Graduate Thesis Student, Supervised by Prof. Chunhong Zheng, Xidian University</div>
+                    </div>
+                    <div class="item-date">11/2025 – 05/2026</div>
+                </div>
+                <div class="item-desc">
+                    <ul>
+                        <li>Developed a lightweight embedded music performance system on Raspberry Pi 4B and ArmPi 6-DOF robot arm, enabling real-time printed music score recognition using OpenCV and Tesseract.</li>
+                        <li>Built a pipeline integrating image acquisition, printed music score recognition, structured data generation, and robot arm trajectory planning for piano key mapping.</li>
+                        <li>Implemented non-linear physical calibration, reducing positioning error between arm arc motion and piano key layout from 5.0mm to ≤1.2mm.</li>
+                        <li>Designed a Context-aware fusion strategy for visual matching and melodic consistency check, improving recognition accuracy to 95.7% in noisy conditions.</li>
+                        <li>Achieved &lt;45ms frame latency in a lightweight deployment.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Reconfigurable Computing Architecture</div>
+                        <div class="item-subtitle">Research Student, Supervised by Prof. Christian Claudel, University of Texas at Austin</div>
+                    </div>
+                    <div class="item-date">11/2025 – Present</div>
+                </div>
+                <div class="item-desc">
+                    <ul>
+                        <li>Implemented an FPGA-based neural network accelerator supporting training and inference.</li>
+                        <li>Developed a floating-point Python reference model to validate backpropagation-based training behavior.</li>
+                        <li>Completed VHDL design and system integration, verifying hardware functionality using TestBench.</li>
+                        <li>Expanded sample size to 100, achieving convergence within 1249 iterations based on standard ReLU and Leaky ReLU, with a final ISE (integrated squared error) of 0.013.</li>
+                        <li>Compared Python floating-point and VHDL models to analyze hardware-induced convergence degradation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">A Pipeline Defect Detection and Repair Solution Recommendation System by YOLOv8</div>
+                        <div class="item-subtitle">Research Assistant, Supervised by Prof. Peng Yan, Shaanxi A&F Technology University</div>
+                    </div>
+                    <div class="item-date">11/2025 – 03/2026</div>
+                </div>
+                <div class="item-desc">
+                    <ul>
+                        <li>Trained a YOLOv8 model using a dataset reconstructed via an OpenCV pipeline, achieving 87.5% mAP across 7 defect types.</li>
+                        <li>Developed a rule-based mapping engine, automatically matching real-time object detection outputs with a standardized pipeline repair database.</li>
+                        <li>Built a Tkinter-based desktop App integrating real-time inference window, Matplotlib statistical visualizations, TTS audio alerts, and PDF report export.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">An RGB-Thermal Fusion YOLO for All-Weather Object Detection</div>
+                        <div class="item-subtitle">Research Assistant</div>
+                    </div>
+                    <div class="item-date">03/2026 – 06/2026</div>
+                </div>
+                <div class="item-desc">
+                    <ul>
+                        <li>Built a multimodal data pipeline to process and align 5,142 RGB-Thermal image pairs, and implemented a dual-branch backbone to fuse spatial and thermal features.</li>
+                        <li>Co-designed a Context-Guided Task-Aligned Head (CGTA Head) to resolve feature conflicts between object classification and bounding box regression.</li>
+                        <li>Evaluated framework on the FLIR dataset, achieving 75.2% mAP50 at 92.9 FPS while reducing model parameters by 8.2% to 4.5M.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目经历 -->
+        <section>
+            <h2>🛠️ Projects</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">An STM32 Robotic Arm for Automatic Object Sorting</div>
+                    <div class="item-date">10/2025</div>
+                </div>
+                <div class="item-desc">
+                    <ul>
+                        <li>Designed a LeArm robotic system based on STM32 for color-based object sorting.</li>
+                        <li>Implemented offline control and sorting functions via Bluetooth and positioning modules.</li>
+                        <li>Developed, debugged, and programmed a speech recognition module in Keil5.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">A Water Tank Level Control System</div>
+                    <div class="item-date">04/2025 – 06/2025</div>
+                </div>
+                <div class="item-desc">
+                    <ul>
+                        <li>Designed a tank level control system using float level sensor, DC servo motor, gearbox, and control valve.</li>
+                        <li>Analyzed system dynamics through open-loop/closed-loop transfer functions and designed a PI controller to correct steady-state error.</li>
+                        <li>Performed Simulink tuning, achieving ts = 17.899s (&lt;20s) and σ% = 1% (&lt;10%) for stable control.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Single-Cycle and Multi-Cycle ARM Processor Design</div>
+                    <div class="item-date">05/2025</div>
+                </div>
+                <div class="item-desc">
+                    <ul>
+                        <li>Designed single-cycle and multi-cycle ARM-style processors using VHDL, implementing modules including register file, ALU, instruction/data memory, instruction decoder, PSR, and control unit.</li>
+                        <li>Verified functions with ModelSim simulation and programmed FPGA boards via Quartus for on-board testing.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 实习经历 -->
+        <section>
+            <h2>💼 Internships</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">State Grid Shaanxi Electric Power Company Limited</div>
+                        <div class="item-subtitle">Automation and Control System Intern</div>
+                    </div>
+                    <div class="item-date">07/2025 – 08/2025</div>
+                </div>
+                <div class="item-desc">
+                    <ul>
+                        <li>Monitored real-time power grid operations, identified and reported alarm signals and their severity levels, and prepared operational reports, including load, electricity consumption, and equipment status.</li>
+                        <li>Cleaned and validated grid operation data, analyzed historical load and voltage data to identify patterns or anomalies, providing data support for operational status estimation and advanced applications.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Xianyang Hengtong Electric Power (Group) Co., Ltd., Yang Ling Branch</div>
+                        <div class="item-subtitle">Automation and Control System Intern</div>
+                    </div>
+                    <div class="item-date">06/2025 – 07/2025</div>
+                </div>
+                <div class="item-desc">
+                    <ul>
+                        <li>Implemented PID and fuzzy control algorithms in MATLAB and Simulink, validated performance, and enhanced control precision and response through parameter tuning.</li>
+                        <li>Drafted technical documents, organized experimental data, and delivered project reports.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 荣誉与证书 -->
+        <section>
+            <h2>🏆 Honors & Certificates</h2>
+            <div class="item">
+                <div class="item-desc">
+                    <ul>
+                        <li>Outstanding Graduate / First-class Graduation Scholarship (Ratio: 2/100) — 06/2026</li>
+                        <li>First-class Comprehensive Development Scholarship — 09/2023 & 09/2024</li>
+                        <li>Sino-French Encouragement Scholarship — 07/2025</li>
+                        <li>Third Prize, Chinese Collegiate Computing Competition — 06/2025</li>
+                        <li>Bronze Award, China College Students' Internet+ Innovation & Entrepreneurship Competition — 08/2024</li>
+                        <li>Second Prize, National English Writing Competition for College Students — 06/2025</li>
+                        <li>Third Prize, National College Student English Essay Competition — 06/2024</li>
+                        <li>Certificate of Completion for Digital Communication Online Research Seminar, University of Cambridge — 08/2024</li>
+                        <li>Certificate of Completion for Deep Learning Online Autumn Program, University of Cambridge — 12/2023</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技能 -->
+        <section>
+            <h2>⚡ Skills</h2>
+            <div class="item">
+                <div class="item-desc">
+                    <p><strong>Programming Languages:</strong></p>
+                    <div class="skills-list">
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">VHDL</span>
+                        <span class="skill-tag">C</span>
+                    </div>
+                    <p style="margin-top: 12px;"><strong>Technical Skills:</strong></p>
+                    <div class="skills-list">
+                        <span class="skill-tag">ModelSim</span>
+                        <span class="skill-tag">Quartus</span>
+                        <span class="skill-tag">FPGA Verification</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Jupyter Notebook</span>
+                    </div>
+                    <p style="margin-top: 12px;"><strong>Language Proficiency:</strong></p>
+                    <div class="skills-list">
+                        <span class="skill-tag">English (IELTS: 7.5)</span>
+                        <span class="skill-tag">French (Proficient)</span>
+                        <span class="skill-tag">Chinese (Native)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer style="text-align: center; padding: 40px 0 20px; color: #94a3b8; font-size: 0.85rem; border-top: 1px solid #e2e8f0; margin-top: 40px;">
+            © 2026 Pengyuan Zhang · Built with GitHub Pages
+        </footer>
+
+    </div>
+
+</body>
+</html>
